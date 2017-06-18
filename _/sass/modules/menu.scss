@@ -1,0 +1,125 @@
+@import "../variables";
+
+/*Logo*/
+// .logo-container{
+//   height: 87px;
+//   margin-top: -20px;
+//   padding-left: 80px;
+// }
+
+@media (min-width: 1200px){
+	.container {
+	  width: 100%;
+	}
+	#header .header-topbar .container{
+		padding: 0px 70px;
+	}
+}
+/*itens superiores*/
+
+.header-topbar{
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.social-icon a{
+	line-height: 0;
+}
+.contact-itens {
+	color: #fff;
+	float: left;
+	width: auto;
+	margin-top: 10px;
+}
+.contact-itens a{
+	color: $featured_text_color;
+}
+.contact-itens a:hover{
+	text-decoration: underline;
+}
+.contact-icon .fa{
+	font-size: 15px;
+	margin: 4px 8px 0;
+}
+.contact-icon, .contact-icon .fa, .contact-icon p{
+	float: left;
+}
+
+.logo-container img{
+	width: 200px;
+	margin-left: 40px;
+	padding: 10px 0px;
+
+}
+
+.lgn-ct > div a{
+	color: #fff;
+}
+.social-icon a{
+	color: #fff;
+}
+
+.follow-container {
+	padding-top: 30px;
+	color: #fff;
+	text-align: right;
+	padding-right: 60px;
+}
+
+.siga{
+	margin-right: 25px;
+  text-align: right;
+  display: inline-block;
+}
+
+.navigation-menu #main-menu{
+	margin-left: 40px;
+  padding-top: 0px !important;
+}
+/*hover nos itens do header para deixar roxo*/
+.sm-mint a:hover,
+.sm-mint a:focus,
+.sm-mint a:active,
+.current-menu-item a{
+	color: $featured_text_color;
+}
+.social-icon a:hover{
+	color: $featured_text_color;
+}
+
+
+/*Background do carrinho*/
+.header-top-cart.mini-cart .widget.woocommerce.widget_shopping_cart,
+span.mini-cart-count-item{
+	background-color: $buy_box_background;
+	box-shadow: 0px 0px 10px 0px $buy_box_shadow;
+	color: $default_color;
+}
+/*Texto do carrinho*/
+.woocommerce ul.cart_list li a,
+.woocommerce ul.product_list_widget li a,
+.woocommerce .widget_shopping_cart .cart_list li a,
+.woocommerce .widget_shopping_cart .cart_list li,
+.woocommerce.widget_shopping_cart .cart_list li,
+.woocommerce .widget_shopping_cart .total,
+.woocommerce.widget_shopping_cart .total{
+	color: $default_color;
+	font-weight: bold;
+}
+.woocommerce .widget_shopping_cart .total span,
+.woocommerce.widget_shopping_cart .total span,
+.woocommerce-Price-amount.amount{
+	color: $featured_text_color;
+}
+
+
+/*Icone do widget para remover produto e cor do botao*/
+.woocommerce .widget_shopping_cart .cart_list li a.remove,
+.woocommerce.widget_shopping_cart .cart_list li a.remove,
+.header-top-cart.mini-cart:hover .widget.woocommerce.widget_shopping_cart .buttons .button.wc-forward{
+	background: $identity_background_color;
+	color: #fff !important;
+}
+
+/* Cor do botao quando houver hover*/
+.header-top-cart.mini-cart:hover .widget.woocommerce.widget_shopping_cart .buttons .button.wc-forward:hover{
+	background-color: $featured_background_color;
+}

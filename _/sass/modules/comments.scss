@@ -1,0 +1,9 @@
+@import "../variables";
+
+.comment-awaiting-moderation {
+	background-color: $worning_background_color;
+	color: $worning_text_color;
+	padding: 5px;
+	width: 320px;
+	margin-top: 5px;
+}

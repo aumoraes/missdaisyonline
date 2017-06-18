@@ -1,0 +1,27 @@
+/*!
+ * Theme Name:   LojaMissDaisy Child Theme
+ * Theme URI:    http://www.lojamissdaisy.com.br/
+ * Description:  A Styled Store child theme
+ * Author:       Aurélio de Moraes
+ * Author URI:   http://aumoraes.com
+ * Template:     styled-store
+ * Version:      1.0.0
+*/
+
+@import url("../styled-store/style.css");
+
+@import "modules/menu";
+@import "modules/home";
+@import "modules/single-product";
+@import "modules/products";
+@import "modules/comments";
+@import "modules/footer";
+@import "responsive/mobile";
+@import "variables";
+
+body{
+	font-family: "Open Sans",sans-serif;
+}
+.star-rating {
+		display: none !important;
+}

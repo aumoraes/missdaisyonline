@@ -1,0 +1,164 @@
+/* Title */
+.woocommerce div.product .product_title{
+	color: #3e3f94;
+	text-transform: uppercase;
+	line-height: 28px;
+}
+
+/* Rating */
+.rate-wrap {
+	margin-top: 10px;
+}
+.rate {
+	display: inline-block;
+}
+.rate-link {
+	text-decoration: none;
+	outline: none;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+}
+
+.rate-wrap .lojamissdaisy-rate {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.rate-wrap span {
+	color: #3e3f94;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.rate-container .rate-count {
+		top: -1px;
+		left: 1px;
+		display: inline-block !important;
+		font-size: 11px;
+		font-family: helvetica,arial,sans-serif;
+		position: relative;
+}
+
+.lojamissdaisy-rate .rate-container .rate-sprite {
+	top: 5px;
+	background: url("/wp-content/themes/lojamissdaisy/assets/images/lojamissdaisy-rating-icon.png") 0 0px no-repeat;
+	width: 87px;
+	height: 13px;
+	position: relative;
+	margin: 0 5px;
+}
+
+.rate-container .rate-sprite, .rate-container .rate-symbols {
+	height: 19px;
+	display: inline-block;
+	text-align: left;
+}
+
+.lojamissdaisy-rate .rate-container .rate-symbols {
+	background-position: 0 -14px!important;
+	top: -3px;
+	margin: 0;
+}
+
+
+/* VALUE SINGLE PAGE*/
+
+/* CASH PRICE and INSTALLMENTAL*/
+.swp_in_cash_price .fswp_in_cash_prefix,
+.swp_in_cash_price .fswp_in_cash_suffix,
+.fswp_installments_price .fswp_installment_prefix,
+.fswp_installments_price .fswp_installment_suffix{
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.swp_in_cash_price .woocommerce-Price-amount.amount{
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.fswp_installments_price .woocommerce-Price-amount.amount{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.swp_in_cash_price .woocommerce-Price-amount.amount,
+.fswp_installments_price .woocommerce-Price-amount.amount{
+	color: #36c69f;
+}
+
+
+/* BUY */
+button.single_add_to_cart_button.button.alt{
+	border-radius: 10px;
+}
+
+button.single_add_to_cart_button.button.alt:hover {
+	background-color: #3e3f94;
+}
+
+
+/* DESCRIPTION */
+.especificacoes .productDescription {
+	color: #333;
+	margin: auto;
+	width: 100%;
+	text-align: justify;
+}
+.especificacoes.espec{
+	margin: auto;
+}
+.especificacoes.espec h2 {
+	color: #48083a;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 30px;
+}
+
+.especificacao.espec h2 {
+	margin-top: 45px;
+}
+
+.especificacao table {
+	margin: auto;
+	font-size: 14px;
+}
+
+.especificacao #caracteristicas table tr {
+	height: 50px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.especificacao #caracteristicas table tr:last-child {
+	border-bottom: none;
+}
+
+.especificacao #caracteristicas .name-field {
+	padding-right: 50px;
+	text-align: right;
+	color: #36C69F;
+	text-transform: uppercase;
+}
+.especificacao #caracteristicas .value-field {
+	font-weight: 400;
+	color: #333;
+}
+
+.especificacao #caracteristicas .value-field ul{
+	list-style: inside none square;
+}
+
+.composicao ul li{
+	float: left;
+	margin-right: 20px;
+}
+
+.st-product-detail{
+	display: inline-flex;
+}
+
+.woocommerce div.product div.images img{
+	margin-left: 37%;
+}
