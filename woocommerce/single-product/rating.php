@@ -12,7 +12,7 @@
  * @see 	    http://docs.woothemes.com/document/template-structure/
  * @author      WooThemes
  * @package     WooCommerce/Templates
- * @version 2.3.2
+ * @version 3.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -31,26 +31,13 @@ $average      = $product->get_average_rating();
 
 if ( $rating_count > 0 ) : ?>
 
-<div class="woocommerce-product-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-	<div class="rate-wrap">
-		<div class="rate">
-			<a class="rate-link" href="#">
-				<span class="lojamissdaisy-rate">
-					<div class="rate-container">
-						<div class="rate-value rate-count rate-enabled">
-							<strong itemprop="ratingValue" class="rating"><?php echo esc_html( $average ); ?></strong><?php printf( __( ' de %s5%s', 'styled-store' ), '<span itemprop="bestRating">', '</span>' ); ?>
-							<div class="rate-sprite">
-								<meta content="0" itemprop="worstRating">
-								<span class="rate-symbols rate-sprite" style="width: <?php echo ( ( $average / 5 ) * 100 ); ?>%;"></span>
-							</div>
-					</div>
-					<span>VEJA O COMENTÁRIO DE QUEM COMPROU</span>
-						(<?php printf( '<span class="rate-count rate-enabled" itemprop="ratingCount" class="rating">' . $rating_count . '</span>' ); ?>)
-				</div>
-
-			</a>
+	<div class="woocommerce-product-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+		<div class="star-rating" title="<?php printf( __( 'Rated %s out of 5', 'styled-store' ), $average ); ?>">
+			<span style="width:<?php echo ( ( $average / 5 ) * 100 ); ?>%">
+				<strong itemprop="ratingValue" class="rating"><?php echo esc_html( $average ); ?></strong> <?php printf( __( 'out of %s5%s', 'styled-store' ), '<span itemprop="bestRating">', '</span>' ); ?>
+				<?php printf( _n( 'based on %s customer rating', 'based on %s customer ratings', $rating_count, 'styled-store' ), '<span itemprop="ratingCount" class="rating">' . $rating_count . '</span>' ); ?>
+			</span>
 		</div>
 	</div>
-</div>
 
 <?php endif; ?>

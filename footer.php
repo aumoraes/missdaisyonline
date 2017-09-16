@@ -56,6 +56,11 @@
 		</div>
 </footer>
 
+<script language="JavaScript" type="text/javascript">
+TrustLogo("https://missdaisyonline.com.br/wp-content/uploads/2017/06/comodo_secure_seal_76x26_transp.png", "CL1", "none");
+</script>
+<a  href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
+
 <?php wp_footer(); ?>
 </body>
 </html>
