@@ -1,4 +1,18 @@
+.woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-checkout table.cart td.actions .coupon .input-text{
+  height: 33px;
+  width: 150px;
+}
+
+#add_payment_method table.cart td.actions .coupon .input-text, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-checkout table.cart td.actions .coupon .input-text{
+  border: 1px solid #d3ced2;
+  box-sizing: border-box;
+  float: left;
+  line-height: 1;
+  margin: 0 4px 0 0;
+  outline: 0 none;
+  padding: 0 0 0 10px;
+}
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
   font-size: 1em;
-  padding: 0.218em 0.8em;
+  padding: 0.4em 0.8em;
 }

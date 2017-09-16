@@ -21,6 +21,17 @@ function custom_woocommerce_correios_shipping_methods( $rate,$instance_id ) {
 }
 add_filter( 'woocommerce_correios_correios-pac_rate', 'custom_woocommerce_correios_shipping_methods', 10, 2 );
 
+
+/**
+ * Enqueue scripts and styles.
+ */
+function missdaisyonline_scripts() {
+	wp_enqueue_style( 'missdaisyonline-main-style', get_stylesheet_uri() );
+}
+
+add_action( 'wp_enqueue_scripts', 'missdaisyonline_scripts' );
+
+
 /**
  * Set a label for PAC item when the price value is null,
  * work together with method custom_woocommerce_correios_shipping_methods.
